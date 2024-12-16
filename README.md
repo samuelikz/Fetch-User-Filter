@@ -1,39 +1,90 @@
-﻿# Fetch-User-Filter
+# Fetch User Filter 🔍👥
 
-Este código é um exemplo de uma aplicação web simples que faz requisições assíncronas para uma API (no caso, "https://jsonplaceholder.typicode.com/users"), exibe os dados obtidos em uma tabela HTML e permite a ordenação e filtragem dos usuários.
+## 📝 Descrição do Projeto
 
-# Variáveis Globais:
+Um projeto web que permite buscar e filtrar usuários utilizando uma API externa, com uma interface interativa e responsiva. A aplicação demonstra habilidades de consumo de API, manipulação de dados e criação de interface de usuário dinâmica.
 
-let sortOrder = 1;: Esta variável é usada para controlar a ordem de classificação dos usuários na tabela. O valor 1 significa ordenação ascendente e -1 significa ordenação descendente.
-let users = [];: Armazena os dados dos usuários obtidos da API.
-const myUrl = "https://jsonplaceholder.typicode.com/users";: A URL da API que fornece dados dos usuários.
-Função fetchData(url):
+## 🚀 Funcionalidades
 
-Uma função assíncrona que utiliza a API Fetch para obter dados da URL fornecida.
-Retorna os dados obtidos da API.
-Função sortUsers(users, order):
+- Busca e listagem de usuários de uma API externa
+- Filtros avançados por nome, gênero e idade
+- Interface responsiva e amigável
+- Estatísticas dinâmicas sobre os usuários
+- Design moderno e limpo
 
-Recebe uma matriz de usuários e uma ordem de classificação.
-Cria uma cópia da matriz de usuários e a ordena com base no nome (em ordem alfabética).
-A multiplicação por order determina se a ordenação é ascendente (1) ou descendente (-1).
-Função filterUsersByName(users, name):
+## 🛠️ Tecnologias Utilizadas
 
-Filtra a matriz de usuários com base no nome fornecido.
-Função displayData(tbody, users):
+- HTML5
+- CSS3
+- JavaScript (ES6+)
+- Fetch API
+- Metodologia Mobile First
 
-Recebe uma referência para o corpo da tabela (tbody) e a matriz de usuários.
-Cria uma string HTML que representa as linhas da tabela com os dados dos usuários.
-Atualiza o conteúdo do corpo da tabela com a string HTML criada.
-Função Assíncrona initializeApp():
+## 📦 Instalação
 
-Obtém referências para os elementos HTML relevantes (tabela, botão de ordenação, campo de filtro por nome).
-Chama a função fetchData para obter os dados iniciais dos usuários.
-Exibe os dados na tabela.
-Adiciona ouvintes de eventos aos elementos HTML para atualizar a exibição quando ocorrem ações do usuário (clique no botão de ordenação, entrada no campo de filtro).
-Verificação de Ambiente:
+### Pré-requisitos
+- Navegador web moderno
+- Conexão com a internet
 
-if (typeof document !== "undefined"): Garante que o código só seja executado em um ambiente em que o objeto document (representando a árvore DOM) esteja disponível, como em um navegador web.
-Inicialização da Aplicação:
+### Passos para Executar
+1. Clone o repositório
+```bash
+git clone https://github.com/samuelikz/Fetch-User-Filter.git
+```
 
-Se o ambiente for adequado (ou seja, se estiver em um navegador), a função initializeApp é chamada para iniciar a aplicação.
-Resumidamente, a aplicação faz uma requisição à API para obter dados de usuários, exibe esses dados em uma tabela HTML e fornece funcionalidades de ordenação e filtragem para o usuário interagir dinamicamente com os dados exibidos.
+2. Navegue até o diretório do projeto
+```bash
+cd Fetch-User-Filter
+```
+
+3. Abra o arquivo `index.html` em seu navegador
+
+## 🔍 Como Usar
+
+- Digite um nome no campo de busca para filtrar usuários
+- Use os controles deslizantes para filtrar por idade
+- Selecione o gênero para refinar a lista de usuários
+- Visualize estatísticas atualizadas dinamicamente
+
+## 📊 Recursos Principais
+
+- Carregamento dinâmico de usuários
+- Filtros interativos em tempo real
+- Contagem e estatísticas de usuários
+- Design responsivo
+
+## 🌐 Demonstração
+
+Você pode visualizar o projeto ao vivo em: [GitHub Pages Link - Se disponível]
+
+## 🤝 Contribuição
+
+1. Faça um fork do projeto
+2. Crie uma branch para sua feature (`git checkout -b feature/nova-feature`)
+3. Commit suas mudanças (`git commit -m 'Adiciona nova feature'`)
+4. Push para a branch (`git push origin feature/nova-feature`)
+5. Abra um Pull Request
+
+## 🐛 Problemas Conhecidos
+
+- Nenhum problema significativo relatado no momento
+
+## ⚖️ Licença
+
+Este projeto está sob licença MIT. Veja o arquivo `LICENSE` para mais detalhes.
+
+## 📞 Contato
+
+Samuel Silva
+- GitHub: [samuelikz](https://github.com/samuelikz)
+- LinkedIn: [Samuel Silva](https://www.linkedin.com/in/samuel-silva-dev)
+
+## 🙏 Agradecimentos
+
+- Inspiração de design
+- Recursos de API utilizados
+- Comunidade de desenvolvedores
+
+---
+
+**Desenvolvido com ❤️ por Samuel Silva**
