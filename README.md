@@ -77,7 +77,7 @@ Este projeto está sob licença MIT. Veja o arquivo `LICENSE` para mais detalhes
 
 Samuel Silva
 - GitHub: [samuelikz](https://github.com/samuelikz)
-- LinkedIn: [Samuel Silva](https://www.linkedin.com/in/samuel-silva-dev)
+- LinkedIn: [Samuel Silva]([https://www.linkedin.com/in/samuel-silva-dev](https://www.linkedin.com/in/samuel-nunes-da-silva-057899133/))
 
 ## 🙏 Agradecimentos
 
@@ -87,4 +87,4 @@ Samuel Silva
 
 ---
 
-**Desenvolvido com ❤️ por Samuel Silva**
+**Desenvolvido com ❤️ por Samuel Nunes**
