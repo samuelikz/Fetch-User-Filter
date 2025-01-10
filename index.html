@@ -3,29 +3,50 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>User Data Display</title>
+  <title>Exibição de Dados do Usuário</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Dados do Usuário</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Início <span class="sr-only">(atual)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Sobre</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
   <div class="container mt-5">
-    <h2>User Data Display</h2>
+    <h2>Exibição de Dados do Usuário</h2>
 
     <div class="form-row mt-3">
-      <div class="col">
-        <label for="nameFilter">Filter by Name:</label>
-        <input type="text" class="form-control" id="nameFilter">
+      <div class="col-md-8 mx-auto">
+        <label for="nameFilter">Filtrar por Nome:</label>
+        <input type="text" class="form-control" id="nameFilter" placeholder="Pesquisar por nomes..." onkeyup="filterTable()">
       </div>
-      <div class="col">
-        <button class="btn btn-primary mt-4 mt-md-0" id="sort">Sort</button>
+      <div class="col-md-4 text-center">
+        <button class="btn btn-primary mt-4" id="sort">Ordenar</button>
       </div>
     </div>
 
-    <table class="table mt-3">
+    <div class="row mt-3" id="user-cards">
+      <!-- User cards will be dynamically generated here -->
+    </div>
+
+    <table class="table table-striped mt-3" id="user-table">
       <thead>
         <tr>
           <th>ID</th>
-          <th>Name</th>
-          <th>Username</th>
+          <th>Nome</th>
+          <th>Nome de Usuário</th>
           <th>Email</th>
         </tr>
       </thead>
@@ -33,6 +54,15 @@
     </table>
   </div>
 
+  <footer class="bg-light text-center text-lg-start mt-5">
+    <div class="text-center p-3">
+      © 2023 Exibição de Dados do Usuário
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script src="main.js"></script>
 </body>
 </html>
